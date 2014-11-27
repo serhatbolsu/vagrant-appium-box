@@ -10,7 +10,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.synced_folder "/Users/serhatbolsu/Google\ Drive/Automation/alizaShare", "/alizaShare"
+
+  #config.vm.synced_folder "/Users/Shared", "/Share"
 
   config.vm.provider "virtualbox" do |vb|
     vb.customize ['modifyvm', :id, '--usb', 'on']
